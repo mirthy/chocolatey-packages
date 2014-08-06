@@ -1,0 +1,8 @@
+<service>
+  <id>consul</id>
+  <name>Consul</name>
+  <description>consul.io Agent</description>
+  <executable>consul.exe</executable>
+  <arguments>agent -data-dir=./data -ui-dir=./dist -config-dir=/consul</arguments>
+  <logmode>rotate</logmode>
+</service>
