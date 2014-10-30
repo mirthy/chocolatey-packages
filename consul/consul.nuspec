@@ -4,24 +4,28 @@
   <metadata>
     <id>consul</id>
     <title>consul</title>
-    <version>0.3.1</version>
+    <version>0.4.1</version>
     <authors>Mitchell Hashimoto, Armon Dadgar, HashiCorp</authors>
     <owners>mirthy</owners>
     <summary>Consul is a tool for service discovery, monitoring and configuration.</summary>
     <description>Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
-      Consul provides several key features:
-      * Service Discovery - Consul makes it simple for services to register themselves and to discover other services via a DNS or HTTP interface. External services such as SaaS providers can be registered as well.
+Consul provides several key features:
+* Service Discovery - Consul makes it simple for services to register themselves and to discover other services via a DNS or HTTP interface. External services such as SaaS providers can be registered as well.
 
-      * Health Checking - Health Checking enables Consul to quickly alert operators about any issues in a cluster. The integration with service discovery prevents routing traffic to unhealthy hosts and enables service level circuit breakers.
+* Health Checking - Health Checking enables Consul to quickly alert operators about any issues in a cluster. The integration with service discovery prevents routing traffic to unhealthy hosts and enables service level circuit breakers.
 
-      * Key/Value Storage - A flexible key/value store enables storing dynamic configuration, feature flagging, coordination, leader election and more. The simple HTTP API makes it easy to use anywhere.
+* Key/Value Storage - A flexible key/value store enables storing dynamic configuration, feature flagging, coordination, leader election and more. The simple HTTP API makes it easy to use anywhere.
 
-      * Multi-Datacenter - Consul is built to be datacenter aware, and can support any number of regions without complex configuration.
+* Multi-Datacenter - Consul is built to be datacenter aware, and can support any number of regions without complex configuration.
 
-      Can optionally use C:\consul for configuration
+Can optionally use C:\consul for configuration
 
-      Uses the winsw service wrapper to run as a service, MIT license located here:
-      https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
+Uses the winsw service wrapper to run as a service, MIT license located here:
+https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
+
+Both have licenses to distribute:
+https://github.com/hashicorp/consul/blob/master/LICENSE
+https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
     </description>
     <projectUrl>http://www.consul.io</projectUrl>
     <tags>consul service consul.io</tags>
@@ -33,5 +37,6 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="binaries\**" target="binaries" />
   </files>
 </package>
