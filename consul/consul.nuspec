@@ -22,10 +22,6 @@ Can optionally use C:\consul for configuration
 
 Uses the winsw service wrapper to run as a service, MIT license located here:
 https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
-
-Both have licenses to distribute:
-https://github.com/hashicorp/consul/blob/master/LICENSE
-https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
     </description>
     <projectUrl>http://www.consul.io</projectUrl>
     <tags>consul service consul.io</tags>
@@ -37,6 +33,5 @@ https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="binaries\**" target="binaries" />
   </files>
 </package>
