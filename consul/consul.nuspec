@@ -33,5 +33,6 @@ https://github.com/kohsuke/winsw/blob/master/LICENSE.txt
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="binaries\**" target="binaries" />
   </files>
 </package>

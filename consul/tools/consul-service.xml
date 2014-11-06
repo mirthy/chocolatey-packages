@@ -3,6 +3,7 @@
   <name>Consul</name>
   <description>consul.io Agent</description>
   <executable>consul.exe</executable>
-  <arguments>agent -data-dir=./data -ui-dir=./dist -config-dir=/consul</arguments>
+  <arguments>agent -data-dir=/consul/data -ui-dir=./dist -config-dir=/consul/config</arguments>
   <logmode>rotate</logmode>
+  <logpath>/consul/logs</logpath>
 </service>
